@@ -1,69 +1,82 @@
-// main.js - interacción básica
-
 document.addEventListener("DOMContentLoaded", () => {
-  /* Header scroll */
-  const header = document.querySelector(".aj-header");
-  const onScroll = () => {
-    if (!header) return;
-    if (window.scrollY > 10) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  };
-  window.addEventListener("scroll", onScroll);
-  onScroll();
-
-  /* Mobile menu */
-  const toggleBtn = document.querySelector(".aj-menu-toggle");
-  const navMobile = document.querySelector(".aj-nav-mobile");
-  if (toggleBtn && navMobile) {
-    toggleBtn.addEventListener("click", () => {
-      toggleBtn.classList.toggle("is-open");
-      const isOpen = toggleBtn.classList.contains("is-open");
-      navMobile.style.display = isOpen ? "block" : "none";
-    });
-
-    // Cerrar al hacer click en un link
-    navMobile.querySelectorAll("a").forEach((link) =>
-      link.addEventListener("click", () => {
-        toggleBtn.classList.remove("is-open");
-        navMobile.style.display = "none";
-      })
-    );
-  }
-
-  /* Reveal on scroll */
-  const revealEls = document.querySelectorAll(".reveal");
-  if (revealEls.length) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
+    
+    /* 1. Navbar Glass Effect */
+    // Añade la clase 'scrolled' cuando se baja más de 50px
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+        window.addEventListener("scroll", () => {
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
         });
-      },
-      { threshold: 0.15 }
-    );
+    }
 
-    revealEls.forEach((el) => observer.observe(el));
-  }
+    /* 2. Menú Móvil (Drawer Lateral) */
+    // Lógica completa para abrir/cerrar el menú lateral
+    const menuBtn = document.querySelector(".mobile-toggle");
+    const closeBtn = document.querySelector(".close-drawer");
+    const drawer = document.querySelector(".mobile-drawer");
+    const overlay = document.querySelector(".mobile-menu-overlay");
+    const links = document.querySelectorAll(".drawer-links a");
 
-  /* Smooth scroll links internos */
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", (e) => {
-      const href = anchor.getAttribute("href");
-      if (href && href.length > 1) {
-        const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          const top =
-            target.getBoundingClientRect().top + window.scrollY - 80;
-          window.scrollTo({ top, behavior: "smooth" });
+    // Función para manejar el estado del menú
+    const toggleMenu = (isOpen) => {
+        if (!drawer || !overlay) return; // Protección por si no existen elementos
+        
+        if (isOpen) {
+            drawer.classList.add("active");
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden"; // Bloquea el scroll del body
+        } else {
+            drawer.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = ""; // Restaura el scroll
         }
-      }
+    };
+
+    // Event Listeners para el menú
+    if (menuBtn) menuBtn.addEventListener("click", () => toggleMenu(true));
+    if (closeBtn) closeBtn.addEventListener("click", () => toggleMenu(false));
+    if (overlay) overlay.addEventListener("click", () => toggleMenu(false));
+    
+    // Cerrar el menú automáticamente al hacer clic en un enlace interno
+    links.forEach(link => {
+        link.addEventListener("click", () => toggleMenu(false));
     });
-  });
+
+    /* 3. Carrusel de Modelos (Scroll Horizontal) */
+    const track = document.getElementById('modelCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    if (track && prevBtn && nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            // Calcula el ancho de la tarjeta dinámicamente + el gap (24px)
+            const card = track.querySelector('.property-card');
+            const scrollAmount = card ? card.offsetWidth + 24 : 320;
+            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const card = track.querySelector('.property-card');
+            const scrollAmount = card ? card.offsetWidth + 24 : 320;
+            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+    }
+
+    /* 4. Animaciones al hacer Scroll (Intersection Observer) */
+    // Detecta cuando los elementos con clase .fade-up entran en pantalla
+    const observerOptions = {
+        threshold: 0.15, // Se activa cuando el 15% del elemento es visible
+        rootMargin: "0px 0px -50px 0px" // Margen inferior para activar un poco antes
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Dejar de observar una vez animado
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 });

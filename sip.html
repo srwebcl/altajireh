@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas SIP | Alta Jireh Prefabricadas</title>
+    <meta name="description" content="Casas prefabricadas con Paneles SIP en Coquimbo. Máxima eficiencia térmica, construcción rápida y aislación acústica superior.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.webp" alt="Alta Jireh Prefabricadas Logo" style="height: 60px; width: auto;">
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="#modelos">Modelos</a>
+                <a href="#contacto" class="btn btn-primary glow-effect">Cotizar Proyecto</a>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Abrir Menú">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-drawer">
+        <div class="drawer-header">
+            <span class="drawer-title">Menú</span>
+            <button class="close-drawer"><i class="ph ph-x"></i></button>
+        </div>
+        <ul class="drawer-links">
+            <li><a href="index.html"><i class="ph ph-house"></i> Inicio</a></li>
+            <li><a href="#modelos"><i class="ph ph-images"></i> Modelos</a></li>
+            <li><a href="#ubicacion"><i class="ph ph-map-pin"></i> Ubicación</a></li>
+        </ul>
+        <div class="drawer-cta">
+            <a href="#contacto" class="btn btn-primary full-width">Cotizar Ahora</a>
+        </div>
+    </aside>
+
+    <header class="hero">
+        <div class="hero-bg-image" style="background-image: url('/assets/img/Modelos-de-Casas-SIP.webp');"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content fade-up">
+            <div class="hero-badge"><i class="ph-fill ph-thermometer"></i> Eficiencia Térmica</div>
+            <h1>Casas Paneles SIP <br><em>Tecnología y Confort</em></h1>
+            <p>La solución constructiva más eficiente del mercado. Ahorro energético, rapidez de construcción y máximo confort interior.</p>
+            
+            <div class="hero-actions">
+                <a href="#contacto" class="btn btn-primary btn-lg">Cotizar mi Casa</a>
+                <a href="#beneficios" class="btn btn-outline btn-lg">Ver Beneficios</a>
+            </div>
+
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <i class="ph-fill ph-check-circle"></i>
+                    <span>Ahorro Energético</span>
+                </div>
+                <div class="trust-item">
+                    <i class="ph-fill ph-clock"></i>
+                    <span>Entrega Rápida</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="beneficios" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>¿Qué es un Panel SIP?</h2>
+                <p>El Panel SIP (Structural Insulated Panel) es una tecnología innovadora compuesta por un núcleo de espuma aislante entre dos láminas estructurales.</p>
+            </div>
+
+            <div class="grid-3 fade-up">
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-sun"></i></div>
+                    <h3>Eficiencia Energética</h3>
+                    <p>Aislamiento superior que reduce pérdidas de calor en invierno y mantiene el frescor en verano, ahorrando en climatización.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-clock-countdown"></i></div>
+                    <h3>Construcción Rápida</h3>
+                    <p>Gracias al diseño modular, el proceso de construcción es mucho más rápido que los métodos tradicionales.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-speaker-slash"></i></div>
+                    <h3>Aislación Acústica</h3>
+                    <p>Ofrecen un excelente aislamiento acústico, creando espacios tranquilos y confortables dentro de la vivienda.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-thermometer-hot"></i></div>
+                    <h3>Hermeticidad</h3>
+                    <p>Envolvente hermética que minimiza filtraciones de aire y mantiene una temperatura interior constante.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-shield-check"></i></div>
+                    <h3>Resistencia</h3>
+                    <p>Extremadamente resistentes a condiciones climáticas adversas como vientos fuertes y temperaturas extremas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-leaf"></i></div>
+                    <h3>Sostenibilidad</h3>
+                    <p>Materiales sostenibles y reducción del consumo energético hacen de las casas SIP una opción ecológica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modelos" class="section bg-light">
+        <div class="container">
+            <div class="section-header space-between fade-up">
+                <div>
+                    <h2>Modelos SIP Destacados</h2>
+                    <p>Eficiencia y diseño en cada metro cuadrado.</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="control-btn" onclick="scrollTrack('modelCarousel', -1)"><i class="ph ph-caret-left"></i></button>
+                    <button class="control-btn" onclick="scrollTrack('modelCarousel', 1)"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </div>
+
+            <div class="carousel-wrapper fade-up">
+                <div class="carousel-track" id="modelCarousel">
+                    
+                    <article class="property-card">
+                        <div class="img-wrapper">
+                            <span class="tag tag-sip">SIP</span>
+                            <img src="/assets/img/96m2-Amanecer-400x284.jpg" alt="Modelo Amanecer">
+                        </div>
+                        <div class="property-details">
+                            <h3>Modelo Amanecer</h3>
+                            <div class="specs">
+                                <span><i class="ph ph-ruler"></i> 96 m²</span>
+                                <span><i class="ph ph-bed"></i> 3 Dorm</span>
+                                <span><i class="ph ph-shower"></i> 2 Baños</span>
+                            </div>
+                            <a href="#contacto" class="btn btn-sm btn-dark full-width">Cotizar</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sistemas" class="section">
+        <div class="container">
+            <div class="section-header space-between fade-up">
+                <div>
+                    <h2>Otros Sistemas Constructivos</h2>
+                    <p>Explora nuestras otras opciones de construcción.</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="control-btn" onclick="scrollTrack('sistemasTrack', -1)"><i class="ph ph-caret-left"></i></button>
+                    <button class="control-btn" onclick="scrollTrack('sistemasTrack', 1)"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </div>
+
+            <div class="tesla-carousel-track fade-up" id="sistemasTrack">
+                
+                <a href="metalcon.html" class="tesla-card">
+                    <img src="/assets/img/Modelos-de-Casas-de-Metalcon.webp" alt="Casas Metalcon">
+                    <div class="tesla-content">
+                        <h3>Casas de Metalcon</h3>
+                        <p>Estructura de acero galvanizado. Antisísmica e indeformable.</p>
+                        <span class="link-text">Ver modelos <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="madera.html" class="tesla-card">
+                    <img src="/assets/img/Modelos-de-Casas-de-Madera.webp" alt="Casas Madera">
+                    <div class="tesla-content">
+                        <h3>Casas de Madera</h3>
+                        <p>Estilo tradicional con pino impregnado de alta durabilidad.</p>
+                        <span class="link-text">Ver modelos <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="modulares.html" class="tesla-card">
+                    <img src="/assets/img/Modelos-de-Modulares-SIP.webp" alt="Modulares">
+                    <div class="tesla-content">
+                        <h3>Modulares & Reefer</h3>
+                        <p>Unidades transportables llave en mano. Listas en 24 hrs.</p>
+                        <span class="link-text">Ver modelos <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section section-dark">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <div class="contact-info fade-up">
+                    <span class="sub-title">Conversemos</span>
+                    <h2>Cotiza tu Casa SIP</h2>
+                    <p>Déjanos tus datos y un experto te contactará para asesorarte en terreno, materiales y presupuesto.</p>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <div class="icon-box"><i class="ph ph-whatsapp-logo"></i></div>
+                            <div>
+                                <strong>WhatsApp Ventas</strong>
+                                <a href="https://wa.me/56935219947" target="_blank">+56 9 3521 9947</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box"><i class="ph ph-envelope-simple"></i></div>
+                            <div>
+                                <strong>Correo Electrónico</strong>
+                                <a href="mailto:contacto@altajireh.cl">contacto@altajireh.cl</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box"><i class="ph ph-map-pin"></i></div>
+                            <div>
+                                <strong>Ubicación Fábrica</strong>
+                                <span>Ruta D-43, Coquimbo (Pan de Azúcar)</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.6534567!2d-71.3!3d-30.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzAwLjAiUyA3McKwMTgnMDAuMCJX!5e0!3m2!1ses!2scl!4v1600000000000!5m2!1ses!2scl" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-card fade-up delay-100">
+                    <form action="#" method="POST"> 
+                        <div class="form-header">
+                            <h3>Solicitar Cotización</h3>
+                            <p>Respuesta garantizada en 24 hrs hábiles</p>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Nombre Completo</label>
+                            <input type="text" class="aj-input" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Teléfono (WhatsApp)</label>
+                            <input type="tel" class="aj-input" placeholder="+56 9..." required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Formato</label>
+                                <select class="aj-input">
+                                    <option>Metalcon</option>
+                                    <option selected>SIP</option>
+                                    <option>Madera</option>
+                                    <option>Modular</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Comuna</label>
+                                <input type="text" class="aj-input" placeholder="Ej: Coquimbo">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Detalles del Proyecto</label>
+                            <textarea class="aj-input" rows="3" placeholder="Ej: Me interesa el Modelo Amanecer..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width glow-effect">Enviar Solicitud</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo.webp" alt="Alta Jireh" style="height: 50px; margin-bottom: 1rem;">
+                    <p>Construcción industrializada de alto estándar en la Región de Coquimbo. Calidad, rapidez y compromiso.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#modelos">Modelos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Sistemas</h4>
+                    <ul>
+                        <li><a href="metalcon.html">Casas de Metalcon</a></li>
+                        <li><a href="sip.html">Casas SIP</a></li>
+                        <li><a href="madera.html">Casas de Madera</a></li>
+                        <li><a href="modulares.html">Modulares y Reefer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Alta Jireh Prefabricadas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-sticky-bar">
+        <a href="tel:+56935219947" class="sticky-action outline">
+            <i class="ph ph-phone"></i> Llamar
+        </a>
+        <a href="https://wa.me/56935219947" class="sticky-action whatsapp">
+            <i class="ph-fill ph-whatsapp-logo"></i> WhatsApp
+        </a>
+    </div>
+
+    <a href="https://wa.me/56935219947" target="_blank" class="whatsapp-float desktop-only">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+        <span class="tooltip">¡Hablemos!</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function scrollTrack(trackId, direction) {
+            const track = document.getElementById(trackId);
+            const card = track.querySelector('.tesla-card') || track.querySelector('.property-card');
+            if(track && card) {
+                const scrollAmount = (card.offsetWidth + 24) * direction;
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

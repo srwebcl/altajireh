@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulares y Reefer | Alta Jireh Prefabricadas</title>
+    <meta name="description" content="Modulares SIP y Contenedores Reefer en Coquimbo. Soluciones habitacionales 100% transportables, rápidas y equipadas.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.webp" alt="Alta Jireh Prefabricadas Logo" style="height: 60px; width: auto;">
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="#modelos">Modelos</a>
+                <a href="#contacto" class="btn btn-primary glow-effect">Cotizar Proyecto</a>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Abrir Menú">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-drawer">
+        <div class="drawer-header">
+            <span class="drawer-title">Menú</span>
+            <button class="close-drawer"><i class="ph ph-x"></i></button>
+        </div>
+        <ul class="drawer-links">
+            <li><a href="index.html"><i class="ph ph-house"></i> Inicio</a></li>
+            <li><a href="#modelos"><i class="ph ph-images"></i> Modelos</a></li>
+            <li><a href="#ubicacion"><i class="ph ph-map-pin"></i> Ubicación</a></li>
+        </ul>
+        <div class="drawer-cta">
+            <a href="#contacto" class="btn btn-primary full-width">Cotizar Ahora</a>
+        </div>
+    </aside>
+
+    <header class="hero">
+        <div class="hero-bg-image" style="background-image: url('/assets/img/Modelos-de-Modulares-SIP.webp');"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content fade-up">
+            <div class="hero-badge"><i class="ph-fill ph-truck"></i> 100% Transportables</div>
+            <h1>Modulares y Reefer <br><em>Soluciones Rápidas</em></h1>
+            <p>Unidades habitacionales llave en mano, listas para habitar. La flexibilidad que necesitas con la calidad que mereces.</p>
+            
+            <div class="hero-actions">
+                <a href="#contacto" class="btn btn-primary btn-lg">Cotizar mi Modular</a>
+                <a href="#beneficios" class="btn btn-outline btn-lg">Ver Características</a>
+            </div>
+
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <i class="ph-fill ph-check-circle"></i>
+                    <span>Llave en Mano</span>
+                </div>
+                <div class="trust-item">
+                    <i class="ph-fill ph-clock"></i>
+                    <span>Entrega Inmediata</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="beneficios" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Versatilidad y Rapidez</h2>
+                <p>Ya sea un Modular SIP o un Contenedor Reefer, ofrecemos soluciones adaptables a cualquier terreno.</p>
+            </div>
+
+            <div class="grid-3 fade-up">
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-truck"></i></div>
+                    <h3>100% Transportables</h3>
+                    <p>Pueden ser trasladados a cualquier lugar una vez terminados, permitiéndote mover tu hogar u oficina las veces que sea necesario.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-plug"></i></div>
+                    <h3>Listos para Habitar</h3>
+                    <p>Vienen completamente equipados con instalaciones eléctricas y sanitarias, listos para usar desde el primer día.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-thermometer-cold"></i></div>
+                    <h3>Aislación Premium</h3>
+                    <p>Tanto los paneles SIP como los Reefer ofrecen una aislación térmica superior, ideal para cualquier clima.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-arrows-out"></i></div>
+                    <h3>Ampliación Modular</h3>
+                    <p>Pueden unirse entre sí para crear espacios más amplios, creciendo junto a tus necesidades.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-shield-check"></i></div>
+                    <h3>Resistencia</h3>
+                    <p>Fabricados con materiales robustos diseñados para soportar condiciones extremas y transporte frecuente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper"><i class="ph ph-storefront"></i></div>
+                    <h3>Versatilidad</h3>
+                    <p>Ideales para viviendas, oficinas, bodegas, salas de ventas o talleres. Una solución multifuncional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modelos" class="section bg-light">
+        <div class="container">
+            <div class="section-header space-between fade-up">
+                <div>
+                    <h2>Modelos Disponibles</h2>
+                    <p>Soluciones compactas y eficientes.</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="control-btn" onclick="scrollTrack('modelCarousel', -1)"><i class="ph ph-caret-left"></i></button>
+                    <button class="control-btn" onclick="scrollTrack('modelCarousel', 1)"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </div>
+
+            <div class="carousel-wrapper fade-up">
+                <div class="carousel-track" id="modelCarousel">
+                    
+                    <article class="property-card">
+                        <div class="img-wrapper">
+                            <span class="tag tag-sip">SIP</span>
+                            <img src="/assets/img/Modelos-de-Modulares-SIP.webp" alt="Modular SIP">
+                        </div>
+                        <div class="property-details">
+                            <h3>Modular SIP 27m²</h3>
+                            <div class="specs">
+                                <span><i class="ph ph-ruler"></i> 27 m²</span>
+                                <span><i class="ph ph-bed"></i> 1-2 Dorm</span>
+                                <span><i class="ph ph-shower"></i> 1 Baño</span>
+                            </div>
+                            <a href="#contacto" class="btn btn-sm btn-dark full-width">Cotizar</a>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <div class="img-wrapper">
+                            <span class="tag tag-metalcon">Reefer</span>
+                            <img src="/assets/img/Modelos-de-Modulares-SIP.webp" alt="Contenedor Reefer">
+                        </div>
+                        <div class="property-details">
+                            <h3>Contenedor Reefer 30m²</h3>
+                            <div class="specs">
+                                <span><i class="ph ph-ruler"></i> 30 m²</span>
+                                <span><i class="ph ph-bed"></i> 2 Dorm</span>
+                                <span><i class="ph ph-shower"></i> 1 Baño</span>
+                            </div>
+                            <a href="#contacto" class="btn btn-sm btn-dark full-width">Cotizar</a>
+                        </div>
+                    </article>
+
+                     <article class="property-card">
+                        <div class="img-wrapper">
+                            <span class="tag tag-sip">SIP</span>
+                            <img src="/assets/img/Modelos-de-Modulares-SIP.webp" alt="Modular SIP">
+                        </div>
+                        <div class="property-details">
+                            <h3>Modular SIP 18m²</h3>
+                            <div class="specs">
+                                <span><i class="ph ph-ruler"></i> 18 m²</span>
+                                <span><i class="ph ph-bed"></i> Studio</span>
+                                <span><i class="ph ph-shower"></i> 1 Baño</span>
+                            </div>
+                            <a href="#contacto" class="btn btn-sm btn-dark full-width">Cotizar</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sistemas" class="section">
+        <div class="container">
+            <div class="section-header space-between fade-up">
+                <div>
+                    <h2>Otros Sistemas Constructivos</h2>
+                    <p>Explora nuestras otras opciones de construcción.</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="control-btn" onclick="scrollTrack('sistemasTrack', -1)"><i class="ph ph-caret-left"></i></button>
+                    <button class="control-btn" onclick="scrollTrack('sistemasTrack', 1)"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </div>
+
+            <div class="tesla-carousel-track fade-up" id="sistemasTrack">
+                
+                <a href="metalcon.html" class="tesla-card">
+                    <img src="/assets/img/Modelos-de-Casas-de-Metalcon.webp" alt="Casas Metalcon">
+                    <div class="tesla-content">
+                        <h3>Casas de Metalcon</h3>
+                        <p>Estructura de acero galvanizado. Antisísmica e indeformable.</p>
+                        <span class="link-text">Ver modelos <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="sip.html" class="tesla-card">
+                    <img src="/assets/img/Modelos-de-Casas-SIP.webp" alt="Casas SIP">
+                    <div class="tesla-content">
+                        <h3>Paneles SIP</h3>
+                        <p>Máxima eficiencia térmica y rapidez constructiva.</p>
+                        <span class="link-text">Ver modelos <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="madera.html" class="tesla-card">
+                    <img src="/assets/img/Modelos-de-Casas-de-Madera.webp" alt="Casas Madera">
+                    <div class="tesla-content">
+                        <h3>Casas de Madera</h3>
+                        <p>Estilo tradicional con pino impregnado de alta durabilidad.</p>
+                        <span class="link-text">Ver modelos <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section section-dark">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <div class="contact-info fade-up">
+                    <span class="sub-title">Conversemos</span>
+                    <h2>Cotiza tu Modular</h2>
+                    <p>Déjanos tus datos y un experto te contactará para asesorarte en terreno, materiales y presupuesto.</p>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <div class="icon-box"><i class="ph ph-whatsapp-logo"></i></div>
+                            <div>
+                                <strong>WhatsApp Ventas</strong>
+                                <a href="https://wa.me/56935219947" target="_blank">+56 9 3521 9947</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box"><i class="ph ph-envelope-simple"></i></div>
+                            <div>
+                                <strong>Correo Electrónico</strong>
+                                <a href="mailto:contacto@altajireh.cl">contacto@altajireh.cl</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box"><i class="ph ph-map-pin"></i></div>
+                            <div>
+                                <strong>Ubicación Fábrica</strong>
+                                <span>Ruta D-43, Coquimbo (Pan de Azúcar)</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.6534567!2d-71.3!3d-30.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzAwLjAiUyA3McKwMTgnMDAuMCJX!5e0!3m2!1ses!2scl!4v1600000000000!5m2!1ses!2scl" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-card fade-up delay-100">
+                    <form action="#" method="POST"> 
+                        <div class="form-header">
+                            <h3>Solicitar Cotización</h3>
+                            <p>Respuesta garantizada en 24 hrs hábiles</p>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Nombre Completo</label>
+                            <input type="text" class="aj-input" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Teléfono (WhatsApp)</label>
+                            <input type="tel" class="aj-input" placeholder="+56 9..." required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Formato</label>
+                                <select class="aj-input">
+                                    <option>Metalcon</option>
+                                    <option>SIP</option>
+                                    <option>Madera</option>
+                                    <option selected>Modular</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Comuna</label>
+                                <input type="text" class="aj-input" placeholder="Ej: Coquimbo">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Detalles del Proyecto</label>
+                            <textarea class="aj-input" rows="3" placeholder="Ej: Me interesa un Modular de 27m2..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width glow-effect">Enviar Solicitud</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo.webp" alt="Alta Jireh" style="height: 50px; margin-bottom: 1rem;">
+                    <p>Construcción industrializada de alto estándar en la Región de Coquimbo. Calidad, rapidez y compromiso.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#modelos">Modelos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Sistemas</h4>
+                    <ul>
+                        <li><a href="metalcon.html">Casas de Metalcon</a></li>
+                        <li><a href="sip.html">Casas SIP</a></li>
+                        <li><a href="madera.html">Casas de Madera</a></li>
+                        <li><a href="modulares.html">Modulares y Reefer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Alta Jireh Prefabricadas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-sticky-bar">
+        <a href="tel:+56935219947" class="sticky-action outline">
+            <i class="ph ph-phone"></i> Llamar
+        </a>
+        <a href="https://wa.me/56935219947" class="sticky-action whatsapp">
+            <i class="ph-fill ph-whatsapp-logo"></i> WhatsApp
+        </a>
+    </div>
+
+    <a href="https://wa.me/56935219947" target="_blank" class="whatsapp-float desktop-only">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+        <span class="tooltip">¡Hablemos!</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function scrollTrack(trackId, direction) {
+            const track = document.getElementById(trackId);
+            const card = track.querySelector('.tesla-card') || track.querySelector('.property-card');
+            if(track && card) {
+                const scrollAmount = (card.offsetWidth + 24) * direction;
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
